@@ -1,0 +1,230 @@
+/* #######################################################################
+
+	Open Page
+
+####################################################################### */
+ 
+ 
+body {
+  background-color: rgba(0, 0, 0, 0.822);
+  height:100%
+}
+
+html {
+  scroll-behavior: smooth;
+  height:100%;
+}
+
+#s1 {
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* #######################################################################
+
+	About
+
+####################################################################### */
+      
+#s2 {
+  height: 100vh;
+}
+
+h2 {
+  color: rgb(206, 202, 200); 
+  font-size: 55px;
+  font-family: sans-serif
+}
+
+.about {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 50px;
+  padding: 250px;
+}
+
+.about > div {
+  flex-direction: row;
+  margin: 50px;
+  line-height: 75px;
+  font-size: 65px;
+  color:  rgb(206, 202, 200);
+}
+
+.main {
+  text-align: center;
+  margin-left: 250px;
+  margin-right: 250px;
+  font-size: 60px;
+  color:  rgb(206, 202, 200);
+}
+
+.text {
+  text-align: center;
+  font-size: 40px;
+  color:  rgb(206, 202, 200);
+}
+
+.text:hover {
+  font-size: 45px;
+  transition: all ease-in-out 150ms;
+}
+    
+/* #######################################################################
+
+	Work
+
+####################################################################### */
+
+
+#s3 {
+  height: 100vh;
+}
+
+.c {
+  padding-top: 98px;
+  margin-left: 100px;
+}
+
+.grid {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: auto  200px;
+  grid-template-rows: 100px 200px;
+  grid-gap: 15px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.grid {
+  border-radius: 0.285em;
+	margin: 45px auto;
+}
+.item {
+  color: rgb(206, 202, 200);
+  font-size: 50px;
+  text-align: center;
+  font-family: sans-serif;
+  padding-top: 200px;
+  text-shadow: 0 2px 0 rgba(110,133,156,0.18);
+  padding: 0.85em;
+}
+
+/* #######################################################################
+
+  Contact
+
+####################################################################### */
+
+#s4 {
+  height: 100vh;
+}
+
+div.d {
+flex-direction: row;
+  justify-content: space-between;
+  display: flex;
+  margin: 250px;
+  color: rgb(206, 202, 200);
+  font-size: 20px;
+  font-family: sans-serif;
+  padding-top: 200px;
+}
+
+/* #######################################################################
+
+	Navigation Bar
+
+####################################################################### */
+
+.flex-container2 {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: red(0, 0, 0, 0.822);
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left:0;
+}
+
+.flex-container2 > li {
+  background-color:#333;
+  width: 100px;
+  margin: 10px;
+  margin-right: 50px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 20px;
+  transition: all 0.25s ease-in-out;
+}
+
+.flex-container2 > li:hover {
+  background-color:rgba(78, 75, 75, 0.822)
+}
+
+ul {
+  list-style-type: none;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: none; 
+  font-family: serif
+}
+
+div.a {
+  text-align: center;
+  color: rgb(216, 212, 210);
+  font-size: 30px;
+  padding-top:98px;
+  font-family: sans-serif
+}
+
+a:hover {
+  color: white;
+}
+
+a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: grey;
+  position: relative;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+a:hover::before {
+  width: 100%;
+}
+
+.active {
+  background-color: rgb(82, 82, 82);
+}
+
