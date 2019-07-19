@@ -260,6 +260,45 @@ footer {
 
 /* Testing Drawing */
 
+.square {
+  margin-top: 250px;
+  height: 50px;
+  width: 50px;
+}
+
+#threeD {
+  position: absolute;
+  right: 10%;
+}
+
+#my-house {
+  position: absolute;
+  right: 10%;
+  padding-left: 80%;
+  margin-top: 200px;
+}
+
+.portrait-container {
+  padding-left: 65%;
+  padding-top: 5%;
+  position: relative;
+  margin-right: auto;
+}
+
+#colours {
+  padding-top: 5%;
+  position: relative;
+  margin-right: auto;
+  max-width: 700px;
+  max-height: 500px;
+  margin-left: 10%;
+  margin-top: 1%;
+}
+
+.colours-container{
+  position: relative;
+}
+
 .portrait-container path {
   stroke: rgb(192, 189, 189);
   stroke-width: 4.3;
