@@ -44,37 +44,55 @@ h2 {
 }
 
 .about {
-  flex-direction: row;
-  display: flex;
-  flex-wrap: nowrap;
   margin-left: 50px;
-  padding: 250px;
-}
-
-.about > div {
-  flex-direction: row;
-  margin: 50px;
-  line-height: 75px;
-  font-size: 65px;
-  color:  rgb(206, 202, 200);
+  padding-top: 250px;
 }
 
 .main {
   text-align: center;
-  margin-left: 250px;
-  margin-right: 250px;
-  font-size: 60px;
+  width: 100%;
+  /* margin-left: 250px;
+  margin-right: 250px; */
+  font-size: calc(20px + 1.5vw);
   color:  rgb(206, 202, 200);
+}
+
+.about-flex {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap
+}
+
+.about-item {
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  font-size: calc(30px + 1.5vw);
+  color:  rgb(206, 202, 200);
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+.about-flex > hr {
+  width: 100%;
+  margin-top: 10px;
+  display: none;
 }
 
 .text {
   text-align: center;
-  font-size: 40px;
+  font-size: calc(30px + 1.5vw);
   color:  rgb(206, 202, 200);
+  margin: 50px;
 }
 
-.text:hover {
-  font-size: 45px;
+.about-item:hover {
+  font-size: calc(45px + 1.5vw);
   transition: all ease-in-out 150ms;
 }
     
@@ -94,21 +112,13 @@ h2 {
   margin-left: 100px;
 }
 
-.grid {
-  max-width: 800px;
-  display: grid;
-  grid-template-columns: auto  200px;
-  grid-template-rows: 100px 200px;
-  grid-gap: 15px;
-}
-
-* {
-	box-sizing: border-box;
-}
-
-.grid {
-  border-radius: 0.285em;
-	margin: 45px auto;
+.work-flex {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap
 }
 .item {
   color: rgb(206, 202, 200);
@@ -151,7 +161,7 @@ flex-direction: row;
   justify-content: space-between;
   display: flex;
   flex-wrap: nowrap;
-  background-color: red(0, 0, 0, 0.822);
+  background-color: #333;
 }
 
 .header {
@@ -180,7 +190,6 @@ ul {
   list-style-type: none;
   padding: 10px;
   overflow: hidden;
-  background-color: #333;
 }
 
 li {
@@ -236,92 +245,4 @@ footer {
   width: 100%;
   height: 50px;
   color:white
-}
-
- /*Button*/ 
- .button {
-  display: inline-block;
-  padding: 4px 12px;
-  margin-bottom: 0;
-  margin-left: 50%;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  vertical-align: middle;
-  cursor: pointer;
-  background-color: #f5f5f5;
-  background-repeat: repeat-x;
-  border: 1px solid #bbbbbb;
-  border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-
-/* Testing Drawing */
-
-.square {
-  margin-top: 250px;
-  height: 50px;
-  width: 50px;
-}
-
-#threeD {
-  position: absolute;
-  right: 10%;
-}
-
-#my-house {
-  position: absolute;
-  right: 10%;
-  padding-left: 80%;
-  margin-top: 200px;
-}
-
-.portrait-container {
-  padding-left: 65%;
-  padding-top: 5%;
-  position: relative;
-  margin-right: auto;
-}
-
-#colours {
-  padding-top: 5%;
-  position: relative;
-  margin-right: auto;
-  max-width: 700px;
-  max-height: 500px;
-  margin-left: 10%;
-  margin-top: 1%;
-}
-
-.colours-container{
-  position: relative;
-}
-
-.portrait-container path {
-  stroke: rgb(192, 189, 189);
-  stroke-width: 4.3;
-  fill: none;
-}
-
-.portrait-svg {
-  display: none;
-  stroke-dasharray: 1365;
-  stroke-dashoffset: 1365;
-  animation: dash 5s linear 1;   
-  animation-fill-mode: forwards;
-}
-
-.visable {
-  display: block;
-}
-
-@keyframes dash {
-  to {
-    stroke-dashoffset: 1365;
-  } 
-  to {
-      stroke-dashoffset: 0;
-  }
 }
