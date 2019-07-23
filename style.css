@@ -70,7 +70,7 @@ h2 {
   padding: 5px;
   width: 200px;
   height: 150px;
-  margin-top: 10px;
+  margin-top: 250px;
   font-size: calc(30px + 1.5vw);
   color:  rgb(206, 202, 200);
   font-weight: bold;
@@ -113,29 +113,29 @@ h2 {
 }
 
 .work-flex {
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
   color: rgb(206, 202, 200);
-  text-align: center;
   font-family: sans-serif;
   padding-top: 50px;
   text-shadow: 0 2px 0 rgba(110,133,156,0.18);
 }
 
 .work-head {
+  text-align: center;
   width: 100%;
   font-size: calc(40px + 1.5vw);
 }
-.work-item {
-  font-size: calc(20px + 1.5vw);
+#work-item {
+  font-size: calc(5px + 1.5vw);
   padding: 0.85em;
+  display: none;
 }
 
 li img {
+  margin-top: 50px;
   width: 30%;
 }
 
