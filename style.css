@@ -118,16 +118,30 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  flex-wrap: wrap
-}
-.item {
+  flex-wrap: wrap;
   color: rgb(206, 202, 200);
-  font-size: 50px;
   text-align: center;
   font-family: sans-serif;
-  padding-top: 200px;
+  padding-top: 50px;
   text-shadow: 0 2px 0 rgba(110,133,156,0.18);
+}
+
+.work-head {
+  width: 100%;
+  font-size: calc(40px + 1.5vw);
+}
+.work-item {
+  font-size: calc(20px + 1.5vw);
   padding: 0.85em;
+}
+
+li img {
+  width: 30%;
+}
+
+li:hover img {
+  width: 50%;
+  transition: ease-in-out 250ms;
 }
 
 /* #######################################################################
