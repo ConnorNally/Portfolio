@@ -17,10 +17,9 @@ html {
 
 #s1 {
   height: 100vh;
-  /* justify-content: center;
+  justify-content: center;
   align-items: center;
-  flex-direction: column; */
-  padding-top:40vh;
+  flex-direction: column;
 }
 
 h1 {
@@ -31,17 +30,18 @@ h1 {
 
 #s1 {
   text-align:center;
-  color:rgb(184, 182, 182);
-  font:'Roboto';
+  color:rgb(230, 230, 230);
+  font-family:'Roboto';
   font-weight:300;
-  font-size:32px;
+  font-size:42px;
   overflow:hidden;
   backface-visibility: hidden;
   perspective: 1000;
-  transform: translate3d(0,0,0);
+
 }
 
 .title {
+  margin-top:40vh;
   display:inline-block;
   overflow:hidden;
   white-space:nowrap;
@@ -81,9 +81,9 @@ h1 {
 @keyframes reveal {
   0% {opacity:0;width:0px;}
   20% {opacity:1;width:0px;}
-  30% {width:600px;}
+  30% {width:630px;}
   80% {opacity:1;}
-  100% {opacity:0;width:600px;}
+  100% {opacity:0;width:630px;}
 }
 
 /* #######################################################################
@@ -110,9 +110,10 @@ h2 {
 .main {
   text-align: center;
   width: 100%;
+  margin: 10px;
   /* margin-left: 250px;
   margin-right: 250px; */
-  font-size: calc(20px + 1.5vw);
+  font-size: calc(15px + 1.5vw);
   color:  rgb(206, 202, 200);
 }
 
