@@ -86,6 +86,20 @@ h1 {
   100% {opacity:0;width:630px;}
 }
 
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
 /* #######################################################################
 
 	About
@@ -153,7 +167,7 @@ h2 {
 
 .about-item:hover {
   font-size: calc(45px + 1.5vw);
-  transition: all ease-in-out 150ms;
+  transition: width 2s;
 }
     
 /* #######################################################################
