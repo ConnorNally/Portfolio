@@ -87,7 +87,7 @@ h1 {
 }
 
 .btn {
-  background-color: DodgerBlue;
+  border-color: rgb(230, 230, 230);
   border: none;
   color: white;
   padding: 12px 30px;
@@ -97,7 +97,7 @@ h1 {
 
 /* Darker background on mouse-over */
 .btn:hover {
-  background-color: RoyalBlue;
+  background-color: rgb(200, 200, 200);
 }
 
 /* #######################################################################
