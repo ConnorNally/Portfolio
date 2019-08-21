@@ -1,3 +1,4 @@
+
 /* #######################################################################
 
 	Open Page
@@ -6,7 +7,7 @@
  
  
 body {
-  background-color: rgba(0, 0, 0, 0.822);
+  background-color: rgba(255, 255, 255, 0.822);
   height:100%
 }
 
@@ -37,7 +38,7 @@ h1 {
   overflow:hidden;
   backface-visibility: hidden;
   perspective: 1000;
-
+  padding-left: 26vh;
 }
 
 .title {
@@ -87,18 +88,60 @@ h1 {
 }
 
 .btn {
-  border-color: rgb(192, 192, 192);
-  color: white;
-  margin-top: 30px;
-  padding: 12px 30px;
-  cursor: pointer;
+  display: inline-block;
+  padding: 12px 12px 10px;
+  border: 0;
+  border-radius: 3px;
+  background: #928783;
+  text-decoration: none;
+  transition: all 1.2s ease-in-out;
   font-size: 20px;
 }
 
-/* Darker background on mouse-over */
-.btn:hover {
-  background-color: rgb(173, 173, 173);
+i::after {
+  font-size: 40px;
+  color: #fff;
 }
+
+i:hover {
+  animation: pulse 0.2s 2 both;
+}
+
+@keyframes loading {
+0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+}
+}
+
+@keyframes change-icon {
+0% {
+  color: transparent;
+}
+
+100% {
+  color: #fff;
+}
+}
+
+@keyframes pulse {
+from {
+  transform: scale3d(1, 1, 1);
+}
+
+50% {
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+
+to {
+  transform: scale3d(1, 1, 1);
+}
+}
+
 
 /* #######################################################################
 
@@ -108,6 +151,7 @@ h1 {
       
 #s2 {
   height: 100vh;
+  padding-left: 30vh;
 }
 
 h2 {
@@ -247,20 +291,32 @@ flex-direction: row;
 
 .flex-container2 {
   justify-content: space-between;
-  display: flex;
-  flex-wrap: nowrap;
-  background-color: #333;
+  flex-wrap: wrap;
+  background-color: rgb(218, 218, 218);
 }
 
 .header {
   position: fixed;
-  width: 100%;
-  top: 0;
-  left:0;
+  align-items:stretch;
+  /* overflow-y: scroll; */
+  width: 250px;
+  height: 100%;
+  left: 25%;
+}
+
+.author-img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .flex-container2 > li {
-  background-color:#333;
   width: 100px;
   margin: 10px;
   margin-right: 50px;
@@ -271,7 +327,7 @@ flex-direction: row;
 }
 
 .flex-container2 > li:hover {
-  background-color:rgba(78, 75, 75, 0.822)
+  background-color:rgba(179, 172, 172, 0.822)
 }
 
 ul {
@@ -281,14 +337,14 @@ ul {
 }
 
 li {
-  float: left;
+  float: center;
 }
 
 li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 25px;
   text-decoration: none;
   text-transform: none; 
   font-family: serif
