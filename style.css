@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 
 /* #######################################################################
 
@@ -20,7 +27,7 @@ html {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+
 }
 
 h1 {
@@ -38,7 +45,6 @@ h1 {
   overflow:hidden;
   backface-visibility: hidden;
   perspective: 1000;
-  padding-left: 26vh;
 }
 
 .title {
@@ -46,6 +52,7 @@ h1 {
   display:inline-block;
   overflow:hidden;
   white-space:nowrap;
+  margin-bottom: 50px;
 }
 
 .title:first-of-type {    /* For increasing performance 
@@ -88,7 +95,7 @@ h1 {
 }
 
 .btn {
-  display: inline-block;
+  position: relative;
   padding: 12px 12px 10px;
   border-color: rgb(134, 133, 133);
   background: transparent;
@@ -99,6 +106,12 @@ h1 {
   margin-top: 15px;
 }
 
+.gitImage {
+  position: relative;
+  width: 2.5%;
+  left: 150px; 
+  bottom: 55px; 
+}
 
 i:hover {
   animation: pulse 0.2s 2 both;
@@ -148,7 +161,6 @@ to {
       
 #s2 {
   height: 100vh;
-  padding-left: 30vh;
 }
 
 h2 {
@@ -158,8 +170,6 @@ h2 {
 }
 
 .about {
-  margin-left: 50px;
-  padding-top: 250px;
 }
 
 .main {
@@ -168,7 +178,7 @@ h2 {
   margin: 10px;
   /* margin-left: 250px;
   margin-right: 250px; */
-  font-size: calc(15px + 1.5vw);
+  font-size: calc(10px + 1.5vw);
   color:  rgb(206, 202, 200);
 }
 
@@ -224,7 +234,6 @@ h2 {
 
 .c {
   padding-top: 98px;
-  margin-left: 100px;
 }
 
 .work-flex {
@@ -299,7 +308,7 @@ flex-direction: row;
   /* overflow-y: scroll; */
   width: 250px;
   height: 100%;
-  left: 25%;
+  left: 35vh;
 }
 
 .author-img {
@@ -375,7 +384,7 @@ a::before {
   content: '';
   display: block;
   height: 5px;
-  background-color: rgb(255, 1, 128);
+  background-color: rgb(168, 167, 167);
   position: relative;
   top: 0;
   width: 0%;

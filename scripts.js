@@ -21,9 +21,7 @@ if(downloadButton) {
       downloadButton.classList.add('success');
     }, 3000);
     
-    /* Reset animation. */
-    window.setTimeout(function() {
-      downloadButton.classList.remove('success');
-    }, 8000);
-  });
-};
+
+function gitHub(){
+  window.location='https://github.com/ConnorNally';
+}
