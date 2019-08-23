@@ -170,24 +170,41 @@ h2 {
 }
 
 .header1 {
-  color: rgb(0, 0, 0); 
-  font-size: 30px;
+  margin-bottom: 15px;
+  display: block;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #999;
+  font-weight: 500;
+  letter-spacing: 5px;
   font-family: sans-serif;
   text-align: left;
+  padding-right: 45em;
 }
 
-.main {
-  text-align: center;
-  margin: 10px;
+.header2 {
+  font-size: 18px;
+  margin-bottom: 4em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 1.8;
+  position: relative;
+  padding-right: 48em;
+}
+
+.text {
+  text-align: left;
   /* margin-left: 250px;
   margin-right: 250px; */
-  font-size: calc(10px + 1.5vw);
+  font-size: calc(5px + 1.5vw);
   color:  rgb(206, 202, 200);
 }
 
 .about-flex {
   padding-left: 30%;
   padding-right: 30%;
+  padding-top: 10em;
   margin: 0;
   display: flex;
   flex-direction: row;
@@ -198,7 +215,7 @@ h2 {
 .about-item {
   padding: 5px;
   height: 150px;
-  margin-top: 250px;
+  margin-top: 150px;
   font-size: calc(30px + 1.5vw);
   color:  rgb(206, 202, 200);
   font-weight: bold;
@@ -214,7 +231,7 @@ h2 {
 
 .text {
   text-align: center;
-  font-size: calc(30px + 1.5vw);
+  font-size: calc(20px + 1.5vw);
   color:  rgb(206, 202, 200);
   margin: 50px;
 }
@@ -240,16 +257,13 @@ h2 {
 }
 
 .work-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  color: rgb(206, 202, 200);
-  font-family: sans-serif;
   padding-left: 30%;
-  padding-right: 20%;
-  padding-top: 50px;
-  text-shadow: 0 2px 0 rgba(110,133,156,0.18);
+  padding-right: 30%;
+  padding-top: 10em;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap
 }
 
 .work-head {
@@ -303,6 +317,7 @@ flex-direction: row;
 .flex-container2 {
   justify-content: space-between;
   background-color: rgb(218, 218, 218);
+  position: fixed;
 }
 
 .header {
@@ -311,7 +326,7 @@ flex-direction: row;
   /* overflow-y: scroll; */
   width: 250px;
   height: 100%;
-  left: 35vh;
+  left: 350px;
 }
 
 .author-img {
