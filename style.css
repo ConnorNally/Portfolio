@@ -169,12 +169,15 @@ h2 {
   font-family: sans-serif
 }
 
-.about {
+.header1 {
+  color: rgb(0, 0, 0); 
+  font-size: 30px;
+  font-family: sans-serif;
+  text-align: left;
 }
 
 .main {
   text-align: center;
-  width: 100%;
   margin: 10px;
   /* margin-left: 250px;
   margin-right: 250px; */
