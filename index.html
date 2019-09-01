@@ -2,18 +2,17 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" type="img/png" href="img/favicon.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="scripts.js"></script>
-  <title>Connor Nally</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="img/png" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connor Nally</title>
 </head>
 
 <body>
 
-  <ul class="flex-container2 header">
+<ul class="navBar header">
     <img class="author-img" src="img\hacker2.jpg">
     <div class="name">Connor Nally</div>
     <div class="description">Developer based in Kent</div>
@@ -21,69 +20,79 @@
     <li><a href="#s2">About</a></li>
     <li><a href="#s3">Work</a></li>
     <li><a href="#s4">Contact</a></li>
-  </ul>
+</ul>
 
-  <div id="s1">
+<div id="s1">
     <div class="title">
-      Connor Nally
+        Connor Nally
     </div>
     <div class="title">
-      <span>looking to start a professional career.</span>
+        <span>looking to start a professional career.</span>
     </div>
 
     <form method="GET" action="CV 2019.docx">
-      <button class="btn"><i class="fa fa-download"></i> Download CV</button>
+        <button class="btn"><i class="fa fa-download"></i> Download CV</button>
     </form>
-
-    <img class="gitImage" src="img/github-logo.png" onclick="gitHub()" />
-
-
-
+<a href="https://github.com/ConnorNally" target="_blank">
+    <img class="gitImage" src="img/github-logo.png"/>
+</a>
     <h1><img src="img/construction.gif"></h1>
-  </div>
+</div>
 
-  <div id="s2">
-    <ul class="about-flex">
-      <li class="header1">About</li>
-      <li class="header2">Who am I?</li>
-      <li class="text">Based in Kent, I currently work in an admin possition, learning
-        programing in my spare time.</li>
-      <li class="text">
-        All knowledge and skills have been self taught,
-        using services like tree house and creating my own projects.
-      </li>
-      <li class="about-item">Javascript</li>
-      <li class="about-item">PHP</li>
-      <li class="about-item"> CSS </li>
-      <li class="about-item">HTML</li>
-    </ul>
-  </div>
+<div id="s2">
+    <div class="header1">About</div>
+    <div class="header2">Who am I?</div>
+    <div class="text">Based in Kent, I currently work in an admin possition, learning
+        programing in my spare time. All knowledge and skills have been self taught,
+        using services like tree house and creating my own projects.</div>
+    <div class="row">
+        <div class="box1">
+            <h3>Javascript</h3>
+        </div>
+        <div class="box2">
+            <h3>PHP</h3>
+        </div>
+        <div class="box3">
+            <h3>HTML</h3>
+        </div>
+        <div class="box4">
+            <h3>CSS</h3>
+        </div>
 
+    </div>
+    <div class="text">Obsessed with learning and fixing problems</div>
+</div>
 
-  <div class="c" id="s3">
+<div id="s3">
+    <div class="header1">Work</div>
+    <div class="header2">Current projects</div>
+    <div class="projects">
+        <div class="container">
+            <a href="https://github.com/ConnorNally" target="_blank">
+        <img  class="aristotle" src="img/aristotle-idea.PNG">
+        <div class="middle">
+            <div class="text">Github code</div>
+        </div>
+    </a>
+    </div>
+        <div class="text alignment">A small project that randomly generates a picture of random shapes and colours, and
+            then compares
+            it to a line portrait. The button puts this into action.
+        </div>
 
-    <ul class="work-flex">
-      <li class="header1">Work</li>
-      <li class="header2">Current projects</li>
+    </div>
+</div>
 
-      <li>
-        <img onmouseover="textAppear()" onmouseout="textGone()" src="img/aristotle-idea.PNG" alt="Aristotle Idea">
-      </li>
-
-      <li id="work-item">
-        A simple app that displays a random collection of shapes and colours, being contrasted to a
-        drawn portrait.
-        The button will put this in motion.
-      </li>
-
-    </ul>
-
-  </div>
-
-  <div class="d" id="s4"></div>
+<div id="s4">
+    <div class="header1">Contact</div>
+    <div class="header2">Get in touch</div>
+    <div class="text">nallyconnor@gmail.com</div>
+    <div class="bottom">
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-bf01bbfd-2d32-4303-9796-06123e2e6eaa"></div>
+</div>
+</div>
 
 </body>
-
-<footer>Connor Nally</footer>
 
 </html>
