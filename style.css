@@ -7,6 +7,11 @@
     margin-left: 33%;
     max-width: 40%;
   }
+
+* {
+  margin: 0;
+}
+
 }
 
 
@@ -17,7 +22,6 @@
 ####################################################################### */
  
 * {
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -33,31 +37,26 @@ body {
   }
 
   #s1 {
+    padding-top: 20%;
     height: 100vh;
     max-width: 900px;
     text-align:center;
     color:rgb(230, 230, 230);
     font-family:'Roboto';
     font-weight:300;
-    font-size:42px;
     overflow:hidden;
     backface-visibility: hidden;
-    perspective: 1000;
   }
 
   .title {
-    margin-top:30vh;
     display:inline-block;
     overflow:hidden;
     white-space:nowrap;
-    margin-bottom: 50px;
+    font-size: 42px;
   }
 
-
-  .title:first-of-type {    /* For increasing performance 
-    ID/Class should've been used. 
-    For a small demo 
-    it's okaish for now */
+  @media only screen and (min-width: 961px) {
+  .title:first-of-type {   
 animation: showup 7s infinite;
 }
 
@@ -93,6 +92,8 @@ animation: slidein 7s infinite;
 100% {opacity:0;width:630px;}
 }
 
+  }
+
 .btn {
 position: relative;
 padding: 12px 12px 10px;
@@ -102,7 +103,7 @@ text-decoration: none;
 letter-spacing: 2px;
 transition: all 1.2s ease-in-out;
 font-size: 20px;
-margin-top: 15px;
+margin-top: 15%;
 }
 
 .gitImage {
@@ -126,6 +127,7 @@ transform: rotate(0deg);
 transform: rotate(359deg);
 }
 }
+
 
 
 /* #######################################################################
@@ -174,7 +176,7 @@ transform: rotate(359deg);
     justify-content: space-around;
     margin-left: -15px;
     margin-right: -15px;
-    margin-top: 105px;
+    margin-top: 15%;
   }
 
   .box1 {
@@ -222,6 +224,12 @@ transform: rotate(359deg);
     font-weight: 500;
     color: rgb(59, 58, 58);
   }
+
+  @media (max-width: 899px) {
+    .row {
+      flex-wrap: wrap;
+    }
+  }
   
 
 /* #######################################################################
@@ -233,7 +241,13 @@ transform: rotate(359deg);
 
 #s3 {
   height: 100vh;
-  padding-top: 5%;
+  padding-top: 10%;
+}
+
+@media (max-width: 899px) {
+  #s3 {
+    padding-top: 30%;
+  }
 }
 
 .projects {
@@ -304,17 +318,12 @@ position: relative;
 
 ####################################################################### */
 
-@media screen and (min-width: 961px) {
-  .header {
-    display: none;
-  }
-}
-
 .navBar {
     background-color: rgb(207, 203, 203);
     margin-top: 0;
     display: block;
   }
+
   
   .header {
     display: block;
@@ -434,3 +443,31 @@ position: relative;
     color:  rgb(0, 0, 0);
     margin-bottom: 1em;
   }
+
+  @media (max-width: 899px) {
+  .text {
+    text-align: center;
+    font-size: 20px;
+    color:  rgb(206, 202, 200);
+  }
+}
+
+  @media (max-width: 899px) {
+    .navBar {
+      display: none;
+    }
+  }
+
+  
+  @media (max-width: 899px) {
+  span {
+    font-size: 22px;
+  }
+}
+
+  
+@media (min-width: 899px) {
+.title {
+  margin-bottom: 50px;
+}
+}
