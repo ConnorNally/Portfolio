@@ -240,8 +240,8 @@ transform: rotate(359deg);
 
 
 #s3 {
-  height: 100vh;
-  padding-top: 10%;
+  height: 200vh;
+  padding-top: 2%;
 }
 
 @media (max-width: 899px) {
@@ -251,45 +251,50 @@ transform: rotate(359deg);
 }
 
 .projects {
-  display: flex;
-  align-content: left;
-  margin-top: 105px;
+  margin-top: 50px;
 }
 
-.alignment {
-  padding-top: 30px;
-  padding-left: 20px;
-  text-align: center;
+.project-disc {
+  font-size: 28px;
+  color: grey;
+  padding-bottom: 20px;
 }
 
 .container {
 position: relative;
 }
 
-
-.aristotle {
+.work-img {
   opacity: 1;
-  width: 100%;
+  width: 60%;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
+  padding-bottom: 25px;
 }
 
-.container:hover .aristotle {
+.work-text {
+  position: absolute;
+  font-size: 28px;
+  text-align: center;
+  height: 100%;
+  top: 30%;
+  right: 40%;
+  opacity: 0;
+}
+
+.container:hover .work-img {
   opacity: 0.5;
 }
 
-.container:hover .middle {
+.work-text:hover {
   opacity: 1;
+  transition: all ease-in-out 250ms;
 }
 
-.middle {
-  transition: .5s ease;
-  margin-bottom: 50px;
-  opacity: 0;
-  text-align: center;
+.black {
+  color: black;
 }
-
 
 
 /* #######################################################################
@@ -300,7 +305,7 @@ position: relative;
 
 #s4 {
   height: 100vh;
-  padding-top: 5%;
+  padding-top: 3%;
 }
 
 .bottom {
@@ -362,6 +367,24 @@ position: relative;
     height: 100%;
     left: 20%;
   }
+
+  @media (max-width: 1900px) {
+    .header {
+      left: 15%
+    }
+  }
+
+  @media (max-width: 1400px) {
+    .header {
+      left: 10%
+    }
+  }
+
+  @media (max-width: 1300px) {
+    .header {
+      left: 5%
+    }
+  }
   
   
   .author-img {
@@ -422,7 +445,6 @@ position: relative;
   
   div.a {
     text-align: center;
-    color: rgb(216, 212, 210);
     font-size: 30px;
     padding-top:98px;
     font-family: sans-serif
@@ -472,6 +494,10 @@ position: relative;
     margin-bottom: 1em;
   }
 
+  a:link {
+    text-decoration: none;
+  }
+
   @media (max-width: 899px) {
   .text {
     text-align: center;
@@ -480,7 +506,7 @@ position: relative;
   }
 }
 
-  @media (max-width: 899px) {
+  @media (max-width: 1000px) {
     .navBar {
       display: none;
     }
